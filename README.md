@@ -30,9 +30,10 @@ To be updated with Interspeech 2015...
 ### Switchboard Hub5'00
 
 (Possibly trained on more data than SWB, but test set = full Hub5'00.)
-| 8% | 14.1% | [The IBM 2015 English Conversational Telephone Speech Recognition System](http://arxiv.org/pdf/1505.05899.pdf) | CNN+RNN (lattice-based MBR loss) with maxout + annealed dropout trained on SWB+Fisher+CH. NNLM scoring. |
+
 | WER (SWB) | WER (full=SWB+CH) | Paper          | Notes   |
 | :------------- | :---------------- | :------------- | :-----: |
+| 8% | 14.1% | [The IBM 2015 English Conversational Telephone Speech Recognition System](http://arxiv.org/pdf/1505.05899.pdf) | CNN+RNN (lattice-based MBR loss) with maxout + annealed dropout trained on SWB+Fisher+CH. NNLM scoring. |
 | 12.6% | 16% | [Deep Speech: Scaling up end-to-end speech recognition](http://arxiv.org/abs/1412.5567) | CNN + Bi-RNN + CTC (speech to letters), 25.9% WER if trained _only_ on SWB |
 | 12.6% | 18.4% | [Sequence-discriminative training of deep neural networks](http://www.danielpovey.com/files/2013_interspeech_dnn.pdf) | HMM-DNN +sMBR |
 | 12.9% | 19.3% | [Audio Augmentation for Speech Recognition](http://www.danielpovey.com/files/2015_interspeech_augmentation.pdf) | TDNN + pNorm + speed up/down speech |
